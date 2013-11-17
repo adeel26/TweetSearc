@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  TweetSearch
 //
-//  Created by Malik Adeel on 29/09/2013.
+//  Created by Malik Adeel
 //  Copyright (c) 2013 Malik Adeel. All rights reserved.
 //
 

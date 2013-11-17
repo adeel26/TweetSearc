@@ -21,6 +21,11 @@
 		018F6DCC17F8588A000352FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018F6DAE17F8588A000352FD /* UIKit.framework */; };
 		018F6DD417F8588A000352FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 018F6DD217F8588A000352FD /* InfoPlist.strings */; };
 		018F6DD617F8588A000352FD /* TweetSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F6DD517F8588A000352FD /* TweetSearchTests.m */; };
+		018F6DE117F85ACB000352FD /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F6DE017F85ACB000352FD /* SearchResult.m */; };
+		018F6DE317F8B886000352FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018F6DE217F8B886000352FD /* Social.framework */; };
+		018F6DE517F8B88D000352FD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018F6DE417F8B88D000352FD /* Accounts.framework */; };
+		01B79EA517F9700100B7C750 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B79EA417F9700100B7C750 /* Background.png */; };
+		01B79EA717F9700700B7C750 /* Background@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B79EA617F9700700B7C750 /* Background@2X.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		018F6DD117F8588A000352FD /* TweetSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetSearchTests-Info.plist"; sourceTree = "<group>"; };
 		018F6DD317F8588A000352FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		018F6DD517F8588A000352FD /* TweetSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetSearchTests.m; sourceTree = "<group>"; };
+		018F6DDF17F85ACB000352FD /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		018F6DE017F85ACB000352FD /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		018F6DE217F8B886000352FD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		018F6DE417F8B88D000352FD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		01B79EA417F9700100B7C750 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		01B79EA617F9700700B7C750 /* Background@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2X.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018F6DE517F8B88D000352FD /* Accounts.framework in Frameworks */,
+				018F6DE317F8B886000352FD /* Social.framework in Frameworks */,
 				018F6DAD17F8588A000352FD /* CoreGraphics.framework in Frameworks */,
 				018F6DAF17F8588A000352FD /* UIKit.framework in Frameworks */,
 				018F6DAB17F8588A000352FD /* Foundation.framework in Frameworks */,
@@ -101,6 +114,8 @@
 		018F6DA917F8588A000352FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				018F6DE417F8B88D000352FD /* Accounts.framework */,
+				018F6DE217F8B886000352FD /* Social.framework */,
 				018F6DAA17F8588A000352FD /* Foundation.framework */,
 				018F6DAC17F8588A000352FD /* CoreGraphics.framework */,
 				018F6DAE17F8588A000352FD /* UIKit.framework */,
@@ -117,6 +132,8 @@
 				018F6DBC17F8588A000352FD /* Main.storyboard */,
 				018F6DBF17F8588A000352FD /* ViewController.h */,
 				018F6DC017F8588A000352FD /* ViewController.m */,
+				018F6DDF17F85ACB000352FD /* SearchResult.h */,
+				018F6DE017F85ACB000352FD /* SearchResult.m */,
 				018F6DC217F8588A000352FD /* Images.xcassets */,
 				018F6DB117F8588A000352FD /* Supporting Files */,
 			);
@@ -126,8 +143,10 @@
 		018F6DB117F8588A000352FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01B79EA617F9700700B7C750 /* Background@2X.png */,
 				018F6DB217F8588A000352FD /* TweetSearch-Info.plist */,
 				018F6DB317F8588A000352FD /* InfoPlist.strings */,
+				01B79EA417F9700100B7C750 /* Background.png */,
 				018F6DB617F8588A000352FD /* main.m */,
 				018F6DB817F8588A000352FD /* TweetSearch-Prefix.pch */,
 			);
@@ -229,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				018F6DC317F8588A000352FD /* Images.xcassets in Resources */,
+				01B79EA517F9700100B7C750 /* Background.png in Resources */,
+				01B79EA717F9700700B7C750 /* Background@2X.png in Resources */,
 				018F6DB517F8588A000352FD /* InfoPlist.strings in Resources */,
 				018F6DBE17F8588A000352FD /* Main.storyboard in Resources */,
 			);
@@ -251,6 +272,7 @@
 			files = (
 				018F6DC117F8588A000352FD /* ViewController.m in Sources */,
 				018F6DBB17F8588A000352FD /* AppDelegate.m in Sources */,
+				018F6DE117F85ACB000352FD /* SearchResult.m in Sources */,
 				018F6DB717F8588A000352FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +482,7 @@
 				018F6DDB17F8588A000352FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		018F6DDC17F8588A000352FD /* Build configuration list for PBXNativeTarget "TweetSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +491,7 @@
 				018F6DDE17F8588A000352FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
